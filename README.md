@@ -1,4 +1,14 @@
 # understanding-environment-variables-and-infrastructure-environments
+
+SUMMARY
+Positional arguments in shell scripting are special variables like $1, $2, $3, etc., that represent values passed to a script when it is executed, with $0 being the script name and $@ or $* representing all arguments. They are useful for making scripts dynamic and reusable, since the same script can behave differently depending on the input provided at runtime. When combined with environment variables, positional arguments allow you to pass configuration values—like environment (local, testing, production), file paths, or resource names—without hardcoding them in the script, which is especially important in DevOps automation for flexible and environment-specific deployments.
+
+
+
+
+
+
+
 1. Create an aws cloud manager script file.
    <img width="794" height="452" alt="image" src="https://github.com/user-attachments/assets/04c98e10-7646-43c0-b494-972e7d36ae38" />
 2. Code input to the script file.
@@ -22,5 +32,4 @@ without running the script, the script takes arguments from the script. the envi
    position variables are ran with the script for local, testing and production as shown in the image below
    <img width="794" height="452" alt="image" src="https://github.com/user-attachments/assets/4aaa8f0c-7524-41aa-a296-faad53f26584" />
 
-SUMMARY
-Positional arguments in shell scripting are special variables like $1, $2, $3, etc., that represent values passed to a script when it is executed, with $0 being the script name and $@ or $* representing all arguments. They are useful for making scripts dynamic and reusable, since the same script can behave differently depending on the input provided at runtime. When combined with environment variables, positional arguments allow you to pass configuration values—like environment (local, testing, production), file paths, or resource names—without hardcoding them in the script, which is especially important in DevOps automation for flexible and environment-specific deployments.
+
